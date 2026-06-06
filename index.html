@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Store - Premium Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body>
+  <!-- ===== START: NAVIGATION HTML ===== -->
+  <nav class="nav">
+   <div class="nav-logo">
+    Circuitlet
+   </div>
+   <ul class="nav-links">
+    <li><button onclick="showPage('home')">Home</button></li>
+    <li><button onclick="showPage('products')">services</button></li>
+    <li><button onclick="showPage('services')">Repairs</button></li>
+   </ul>
+  </nav><!-- ===== END: NAVIGATION HTML ===== --> <!-- ===== START: MAIN CONTENT HTML ===== -->
+  <main>
+   <!-- HOME PAGE -->
+   <div id="home" class="page active">
+    <div class="hero">
+     <h1>DOOR TO DOOR <span> SERVICE </span></h1>
+     <p>Complete Computing Solutions: Build, Upgrade, Repair,Giving Your Gear a Second Life—and Superpowers </p>
+     <div style="display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap;">
+      <button class="btn-cta" onclick="showPage('products')">Our Services</button> <button class="btn-repair" onclick="showPage('services')">Book Repair</button>
+     </div>
+    </div>
+   </div><!-- ===== END: HOME PAGE HTML ===== --> <!-- ===== START: PRODUCTS PAGE HTML ===== -->
+   <div id="products" class="page">
+    <div class="catalog-section">
+     <h2 style="margin-bottom: 2rem; font-size: 1.8rem;">Featured Products</h2>
+     <div class="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card" onclick="openProductDetails('WINDOWS Installaion', '', 249, '⚡', 'WINDOWS 7 , WINDOWS 10 , WINDOWS 11 , WINDOWS SERVER .')">
+       <div class="product-img">
+        <img src="Untitled design.png" >
+       </div>
+       <div class="product-info">
+        <h4>WINDOWS INSTALLATION</h4><span class="brand-tag"></span> <span class="stock-badge">In Stock</span>
+        <div class="price">
+         ₹249
+        </div>
+        <div class="product-buttons">
+         <button class="btn-view" onclick="event.stopPropagation(); openProductDetails('WINDOWS INSTALLATION', '', 249, '⚡', 'WINDOWS 7 , WINDOWS 10 , WINDOWS 11 , WINDOWS SERVER')">View Details</button> <button class="btn-buy-now" onclick="event.stopPropagation(); openCheckoutForm('WINDOWS INSTALLAION', 249)">Buy Now</button>
+        </div>
+       </div>
+      </div><!-- Product 2 -->
+      <div class="product-card" onclick="openProductDetails('LAPTOP SERVICE', '', 400, '💻', ' For Normal daily used laptops , cleaning , servicing and Thermal paste renewal')">
+       <div class="product-img">
+       <img src="laptop-repair-logo-wrench-amp-screwdriver-vector-27445110.avif" alt="">
+       </div>
+       <div class="product-info">
+        <h4>LAPTOP / PC SERVICE</h4><span class="brand-tag"></span> <span class="stock-badge">In Stock</span>
+        <div class="price">
+        ₹400
+        </div>
+        <div class="product-buttons">
+         <button class="btn-view" onclick="event.stopPropagation(); openProductDetails(' LAPTOP SERVICING', '', 400, '💻', ' For Normal daily used laptops , cleaning , servicing and Thermal paste renewal')">View Details</button> <button class="btn-buy-now" onclick="event.stopPropagation(); openCheckoutForm('LAPTOP SERVICING', 400)">Buy Now</button>
+        </div>
+       </div>
+      </div><!-- Product 3 -->
+      <div class="product-card" onclick="openProductDetails('SOFTWARE INSTALLAION', '', 500, '🖥️', 'SOFTWARE INSTALLAION INCLUDES  - MS OFFICE , PREMIRE PRO , CAD , and any softwares , all kind of version are avaliable')">
+       <div class="product-img">
+        <img src="2.png">
+       </div>
+       <div class="product-info">
+        <h4>SOFTWARE INSTALLATION</h4><span class="brand-tag"></span> <span class="stock-badge">In Stock</span>
+        <div class="price">
+        ₹500
+        </div>
+        <div class="product-buttons">
+         <button class="btn-view" onclick="event.stopPropagation(); openProductDetails('Samsung 4K Monitor', 'Samsung', 799, '🖥️', 'SOFTWARE INSTALLAION INCLUDES  - MS OFFICE , PREMIRE PRO , CAD , and any softwares , all kind of version are avaliable')">View Details</button> <button class="btn-buy-now" onclick="event.stopPropagation(); openCheckoutForm('SOFTWARE INSTALLAION', 500)">Buy Now</button>
+        </div>
+       </div>
+      </div><!-- Product 4 -->
+      <div class="product-card" onclick="openProductDetails('GAMING LAPTOP AND PC SERVICE', '', 900, '🎮', 'This is Sepicific type of service for high performance gaming laptops and pc , in this service we used premium thermal paste and thermal pads')">
+       <div class="product-img">
+
+        <img src="3.png">
+       </div>
+       <div class="product-info">
+        <h4>GAMING LAPTOP / PC SERVICE</h4><span class="brand-tag"></span> <span class="stock-badge">In Stock</span>
+        <div class="price">
+        ₹900
+        </div>
+        <div class="product-buttons">
+         <button class="btn-view" onclick="event.stopPropagation(); openProductDetails(' GAMING LAPTOP / PC SERVICE', 'Custom', 900, '🎮', 'This is Sepicific type of service for high performance gaming laptops and pc , in this service we used premium thermal paste and thermal pads ')">View Details</button> <button class="btn-buy-now" onclick="event.stopPropagation(); openCheckoutForm('GAMING LAPTOP AND PC SERVICE', 900)">Buy Now</button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div><!-- SERVICES PAGE -->
+   <div id="services" class="page">
+    <div class="service-container">
+     <h2>📱 Book a Device Repair</h2>
+     <p class="subtitle">Fill out the form below and we'll contact you within 24 hours</p>
+     <form id="repairForm" class="repair-form">
+      <div class="form-group">
+       <label style="font-weight: 700; margin-bottom: 0.8rem;">SELECT DEVICE TYPE</label>
+       <div class="device-options">
+        <label><input type="radio" name="device" value="Phone" required> 📱 Phone</label> <label><input type="radio" name="device" value="Laptop" required> 💻 Laptop</label> <label><input type="radio" name="device" value="PC" required> 🖥️ PC</label> <label><input type="radio" name="device" value="Console" required> 🎮 Console</label> <label><input type="radio" name="device" value="Other" required> 📦 Other</label>
+       </div>
+      </div>
+      <div class="form-group">
+       <label for="brand">SELECT BRAND</label> <select name="brand" id="brand" required> <option value="">-- Select Brand --</option> <option value="Apple">Apple</option> <option value="Asus">Asus</option> <option value="Samsung">Samsung</option> <option value="Sony">Sony</option>  <option value="Motorola">Motorola</option>  <option value="Microsoft">Microsoft</option> <option value="Dell">Dell</option> <option value="HP">HP</option> <option value="Lenovo">Lenovo</option>  <option value="Other">Other</option> </select>
+      </div>
+      <div class="form-group">
+       <label for="repair-name">FULL NAME</label> <input type="text" id="repair-name" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="form-group">
+       <label for="repair-email">EMAIL</label> <input type="email" id="repair-email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="form-group">
+       <label for="repair-phone">PHONE NUMBER</label> <input type="tel" id="repair-phone" name="phone" placeholder="+91 9XXXXXXXXX" required>
+      </div>
+      <div class="form-group">
+       <label for="repair-address">ADDRESS / LOCATION</label> <textarea id="repair-address" name="address" placeholder="Your full address..." required style="min-height: 100px; resize: vertical;"></textarea>
+      </div>
+      <div class="form-group">
+       <label for="repair-issue">DESCRIBE THE ISSUE</label> <textarea id="repair-issue" name="issue" placeholder="What's wrong with your device?" required style="min-height: 100px; resize: vertical;"></textarea>
+      </div>
+      <div class="form-group" id="otherDeviceGroup" style="display: none;">
+       <label for="repair-other-device">SPECIFY DEVICE TYPE</label> <textarea id="repair-other-device" name="other_device" placeholder="Please describe your device..." style="min-height: 80px; resize: vertical;"></textarea>
+      </div><button type="submit" class="btn-submit">📤 Submit Repair Request</button>
+      <div id="repairSuccess" class="success-message">
+       ✓ Thank you! We'll contact you shortly to schedule your repair.
+      </div>
+     </form>
+    </div>
+   </div>
+  </main><!-- CHECKOUT MODAL -->
+  <div id="checkoutModal" class="checkout-modal">
+   <div class="checkout-content">
+    <div class="checkout-header">
+     <h2>Checkout</h2><button class="checkout-close" id="closeCheckout" type="button">×</button>
+    </div>
+    <div class="checkout-body">
+     <form id="checkoutForm">
+      <div class="checkout-section">
+       <div class="checkout-section-title">
+        Order Summary
+       </div>
+       <div class="order-summary">
+        <div class="summary-row">
+         <span>Product:</span> <span id="productNameDisplay">-</span>
+        </div>
+        <div class="summary-row">
+         <span>Quantity:</span> <span>1</span>
+        </div>
+        <div class="summary-row total">
+         <span>Total:</span> <span id="productPriceDisplay">-</span>
+        </div>
+       </div>
+      </div>
+      <div class="checkout-section">
+       <div class="checkout-section-title">
+        Customer Information
+       </div>
+       <div class="form-group">
+        <label for="ship-name">Full Name</label> <input type="text" id="ship-name" name="name" required>
+       </div>
+       <div class="form-group">
+        <label for="ship-email">Email</label> <input type="email" id="ship-email" name="email" required>
+       </div>
+       <div class="form-group">
+        <label for="ship-phone">Contact Number</label> <input type="tel" id="ship-phone" name="phone" placeholder="+91 9XXXXXXXXX" required>
+       </div>
+      </div>
+      <div class="checkout-section">
+       <div class="checkout-section-title">
+       </div>
+       <div class="form-group">
+        <label for="ship-address">Address</label> <textarea id="ship-address" name="address" required style="min-height: 80px; resize: vertical;"></textarea>
+       </div>
+      </div><input type="hidden" id="productNameInput" name="productName"> <input type="hidden" id="productPriceInput" name="productPrice">
+      <div class="checkout-actions">
+       <button type="button" class="btn-cancel" id="cancelCheckout">Cancel</button> <button type="submit" class="btn-place-order">Place Order</button>
+      </div>
+      <div id="checkoutSuccess" class="checkout-success">
+       <h3>✓ Order Placed Successfully!</h3>
+       <p>We will reach out to you in 24 hours to confirm your order and arrange delivery.</p>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div><!-- PRODUCT DETAILS MODAL -->
+  <div id="productDetailsModal" class="product-details-modal">
+   <div class="details-content">
+    <div class="details-header">
+     <h2>Product Details</h2><button class="details-close" id="closeDetails" type="button">×</button>
+    </div>
+    <div class="details-body">
+     <div class="details-icon" id="detailsIcon">
+      -
+     </div>
+     <div class="details-brand" id="detailsBrand">
+      Brand
+     </div>
+     <h2 id="detailsName">Product Name</h2>
+     <div class="details-price" id="detailsPrice">
+      ₹
+     </div>
+     <div class="details-description" id="detailsDescription">
+      Description goes here
+     </div>
+     <div class="details-specs">
+      <div class="spec-item"><span>Warranty</span> <span>6 Months</span>
+      </div>
+      <div class="spec-item"> <pre><span>Shipping</span>      <span>Depends on your 
+               location</span></pre>
+      </div>
+      <div class="spec-item"><span>Returns</span> <span>no returns</span>
+      </div>
+      <div class="spec-item"><span>Availability</span> <span>In Stock</span>
+      </div>
+     </div>
+     <div class="details-actions"><button type="button" class="btn-details-cancel" id="cancelDetails">Close</button> <button type="button" class="btn-details-buy" id="detailsBuyBtn" onclick="event.stopPropagation();">Buy Now</button>
+     </div>
+    </div>
+   </div>
+  </div><!-- ===== START: JAVASCRIPT SECTION ===== -->
+  <script>
+    // ===== START: GLOBAL VARIABLES =====
+    let currentProductName = '';
+    let currentProductPrice = '';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyziZ7gDRDPFYvvs6Y6_la3YKU1mXxKc5lJpIXf4XckS0S2vVknzlU20PRrtHTZIY5L/exec'; // Replace with your Google Apps Script URL
+    // ===== END: GLOBAL VARIABLES =====
+
+    // ===== START: GOOGLE SHEETS FUNCTION - CHECKOUT =====
+    function sendCheckoutToGoogleSheets(data) {
+      const payload = {
+        orderType: 'Product Purchase',
+        productName: data.product_name,
+        productPrice: data.product_price,
+        customerName: data.customer_name,
+        email: data.customer_email,
+        phone: data.contact_number,
+        address: data.address,
+        deviceOrIssue: data.product_name
+      };
+      
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        body: new URLSearchParams(payload)
+      }).catch(error => console.error('Error:', error));
+    }
+    // ===== END: GOOGLE SHEETS FUNCTION - CHECKOUT =====
+
+    // ===== START: GOOGLE SHEETS FUNCTION - REPAIR =====
+    function sendRepairToGoogleSheets(data) {
+      const payload = {
+        orderType: 'Device Repair',
+        productName: data.device,
+        productPrice: 'N/A',
+        customerName: data.name,
+        email: data.email,
+        phone: data.phone,
+        address: data.address,
+        deviceOrIssue: data.issue + (data.other_device ? ' | Other: ' + data.other_device : '')
+      };
+      
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        body: new URLSearchParams(payload)
+      }).catch(error => console.error('Error:', error));
+    }
+    // ===== END: GOOGLE SHEETS FUNCTION - REPAIR =====
+
+    // ===== START: PAGE NAVIGATION FUNCTION =====
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      
+      const selectedPage = document.getElementById(pageId);
+      if (selectedPage) {
+        selectedPage.classList.add('active');
+        window.scrollTo(0, 0);
+      }
+    }
+    // ===== END: PAGE NAVIGATION FUNCTION =====
+
+    // ===== START: PRODUCT DETAILS MODAL FUNCTIONS =====
+    function openProductDetails(name, brand, price, icon, description) {
+      document.getElementById('detailsIcon').textContent = icon;
+      document.getElementById('detailsBrand').textContent = brand;
+      document.getElementById('detailsName').textContent = name;
+      document.getElementById('detailsPrice').textContent = '₹' + price;
+      document.getElementById('detailsDescription').textContent = description;
+      
+      currentProductName = name;
+      currentProductPrice = price;
+      
+      document.getElementById('productDetailsModal').classList.add('open');
+    }
+
+    function closeProductDetails() {
+      document.getElementById('productDetailsModal').classList.remove('open');
+    }
+    // ===== END: PRODUCT DETAILS MODAL FUNCTIONS =====
+
+    // ===== START: CHECKOUT MODAL FUNCTIONS =====
+    function openCheckoutForm(productName, price) {
+      closeProductDetails();
+      document.getElementById('productNameDisplay').textContent = productName;
+      document.getElementById('productPriceDisplay').textContent = '₹' + price;
+      document.getElementById('productNameInput').value = productName;
+      document.getElementById('productPriceInput').value = price;
+      document.getElementById('checkoutModal').classList.add('open');
+    }
+
+    function closeCheckoutForm() {
+      document.getElementById('checkoutModal').classList.remove('open');
+    }
+    // ===== END: CHECKOUT MODAL FUNCTIONS =====
+
+    // ===== START: DOM CONTENT LOADED EVENT =====
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // ===== START: PRODUCT DETAILS MODAL EVENT LISTENERS =====
+      document.getElementById('closeDetails').addEventListener('click', closeProductDetails);
+      document.getElementById('cancelDetails').addEventListener('click', closeProductDetails);
+      document.getElementById('detailsBuyBtn').addEventListener('click', function() {
+        openCheckoutForm(currentProductName, currentProductPrice);
+      });
+      // ===== END: PRODUCT DETAILS MODAL EVENT LISTENERS =====
+
+      // ===== START: CHECKOUT FORM SUBMIT HANDLER =====
+      document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const orderData = {
+          product_name: document.getElementById('productNameInput').value,
+          product_price: document.getElementById('productPriceInput').value,
+          customer_name: document.getElementById('ship-name').value,
+          customer_email: document.getElementById('ship-email').value,
+          contact_number: document.getElementById('ship-phone').value,
+          address: document.getElementById('ship-address').value
+        };
+
+        // Send data to Google Sheets
+        sendCheckoutToGoogleSheets(orderData);
+        
+        // Show success message
+        document.getElementById('checkoutSuccess').style.display = 'block';
+        setTimeout(() => {
+          closeCheckoutForm();
+          document.getElementById('checkoutSuccess').style.display = 'none';
+          document.getElementById('checkoutForm').reset();
+        }, 3000);
+      });
+      // ===== END: CHECKOUT FORM SUBMIT HANDLER =====
+
+      // ===== START: REPAIR FORM DEVICE TYPE CHANGE =====
+      const deviceRadios = document.querySelectorAll('input[name="device"]');
+      deviceRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+          const otherDeviceGroup = document.getElementById('otherDeviceGroup');
+          if (this.value === 'Other') {
+            otherDeviceGroup.style.display = 'flex';
+            document.getElementById('repair-other-device').required = true;
+          } else {
+            otherDeviceGroup.style.display = 'none';
+            document.getElementById('repair-other-device').required = false;
+          }
+        });
+      });
+      // ===== END: REPAIR FORM DEVICE TYPE CHANGE =====
+
+      // ===== START: REPAIR FORM SUBMIT HANDLER =====
+      document.getElementById('repairForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Collect repair form data
+        const repairData = {
+          device: document.querySelector('input[name="device"]:checked').value,
+          name: document.getElementById('repair-name').value,
+          email: document.getElementById('repair-email').value,
+          phone: document.getElementById('repair-phone').value,
+          address: document.getElementById('repair-address').value,
+          issue: document.getElementById('repair-issue').value,
+          other_device: document.getElementById('repair-other-device').value
+        };
+
+        // Send data to Google Sheets
+        sendRepairToGoogleSheets(repairData);
+        
+        // Show success message
+        document.getElementById('repairSuccess').style.display = 'block';
+        setTimeout(() => {
+          document.getElementById('repairSuccess').style.display = 'none';
+          this.reset();
+          document.getElementById('otherDeviceGroup').style.display = 'none';
+        }, 2000);
+      });
+      // ===== END: REPAIR FORM SUBMIT HANDLER =====
+
+      // ===== START: CHECKOUT MODAL CLOSE HANDLERS =====
+      document.getElementById('closeCheckout').addEventListener('click', closeCheckoutForm);
+      document.getElementById('cancelCheckout').addEventListener('click', closeCheckoutForm);
+      // ===== END: CHECKOUT MODAL CLOSE HANDLERS =====
+
+    });
+    // ===== END: DOM CONTENT LOADED EVENT =====
+
+  </script><!-- ===== END: JAVASCRIPT SECTION ===== -->
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CFcvparams={r:'9ff34e95f091bc88',t:'MTc3OTM2MzYzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
